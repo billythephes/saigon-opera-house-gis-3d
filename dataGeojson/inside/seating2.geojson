@@ -1,0 +1,29 @@
+{
+    "type": "FeatureCollection",
+    "generator": "saigonoperahouse",
+    "copyright": "Saigonoperahouse",
+    "timestamp": "2024-11-11T10:03:07Z",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Building name": "seating 2",
+                "height": 0.65,
+                "idb": "1"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [106.7034989, 10.7768053, 7.8],
+                        [106.7034281, 10.7768681, 7.8],
+                        [106.7030852, 10.776485, 7.8],
+                        [106.703155, 10.7764232, 7.8],
+                        [106.7034989, 10.7768053, 7.8]
+                    ]
+                ]
+            },
+            "id": "2"
+        }
+    ]
+}

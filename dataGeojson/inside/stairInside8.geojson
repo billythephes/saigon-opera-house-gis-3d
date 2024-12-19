@@ -1,0 +1,29 @@
+{
+    "type": "FeatureCollection",
+    "generator": "saigonoperahouse",
+    "copyright": "Saigonoperahouse",
+    "timestamp": "2024-11-11T10:03:07Z",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Building name": "stair inside 8",
+                "height": 0.25,
+                "idb": "1"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [106.7035524, 10.7768299, 8.05],
+                        [106.7035271, 10.7768536, 8.05],
+                        [106.7035211, 10.7768472, 8.05],
+                        [106.7035473, 10.7768243, 8.05],
+                        [106.7035524, 10.7768299, 8.05]
+                    ]
+                ]
+            },
+            "id": "2"
+        }
+    ]
+}

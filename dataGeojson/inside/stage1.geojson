@@ -1,0 +1,29 @@
+{
+    "type": "FeatureCollection",
+    "generator": "saigonoperahouse",
+    "copyright": "Saigonoperahouse",
+    "timestamp": "2024-11-11T10:03:07Z",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Building name": "stage 1",
+                "height": 1.5,
+                "idb": "1"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [106.7034892, 10.7770608, 7.8],
+                        [106.703443, 10.7771014, 7.8],
+                        [106.7033983, 10.7770509, 7.8],
+                        [106.7034454, 10.7770099, 7.8],
+                        [106.7034892, 10.7770608, 7.8]
+                    ]
+                ]
+            },
+            "id": "2"
+        }
+    ]
+}

@@ -153,6 +153,17 @@
           map.add(graphicsLayer);
         });
         
+        esriRequest("./datajson/wall.json", json_options).then(function (
+          response
+        ) {
+          var graphicsLayer = new GraphicsLayer();
+          console.log(response);
+          response.data.forEach(function (data) {
+            graphicsLayer.add(createGraphic(data));
+          });
+          map.add(graphicsLayer);
+        });
+        
         const bottomLayer = new GeoJSONLayer({
           url: "./dataGeojson/bottom.geojson",
         });
@@ -681,6 +692,329 @@
                 size: 0.12,
                 material: {
                   color: "#8c8c8c",
+                },
+              },
+            ],
+          },
+        };
+
+        const stairInsideLayer = new GeoJSONLayer({
+          url: "./dataGeojson/inside/stairInside.geojson",
+        });
+        stairInsideLayer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.25,
+                material: {
+                  color: "#c0ad91",
+                },
+              },
+            ],
+          },
+        };
+
+        const stairInside2Layer = new GeoJSONLayer({
+          url: "./dataGeojson/inside/stairInside2.geojson",
+        });
+        stairInside2Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.25,
+                material: {
+                  color: "#c0ad91",
+                },
+              },
+            ],
+          },
+        };
+
+        const stairInside3Layer = new GeoJSONLayer({
+          url: "./dataGeojson/inside/stairInside3.geojson",
+        });
+        stairInside3Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.25,
+                material: {
+                  color: "#c0ad91",
+                },
+              },
+            ],
+          },
+        };
+
+        const stairInside4Layer = new GeoJSONLayer({
+          url: "./dataGeojson/inside/stairInside4.geojson",
+        });
+        stairInside4Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.25,
+                material: {
+                  color: "#c0ad91",
+                },
+              },
+            ],
+          },
+        };
+
+        const stairInside5Layer = new GeoJSONLayer({
+          url: "./dataGeojson/inside/stairInside5.geojson",
+        });
+        stairInside5Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.25,
+                material: {
+                  color: "#c0ad91",
+                },
+              },
+            ],
+          },
+        };
+
+        const stairInside6Layer = new GeoJSONLayer({
+          url: "./dataGeojson/inside/stairInside6.geojson",
+        });
+        stairInside6Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.25,
+                material: {
+                  color: "#c0ad91",
+                },
+              },
+            ],
+          },
+        };
+
+        const stairInside7Layer = new GeoJSONLayer({
+          url: "./dataGeojson/inside/stairInside7.geojson",
+        });
+        stairInside7Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.25,
+                material: {
+                  color: "#c0ad91",
+                },
+              },
+            ],
+          },
+        };
+
+        const stairInside8Layer = new GeoJSONLayer({
+          url: "./dataGeojson/inside/stairInside8.geojson",
+        });
+        stairInside8Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.25,
+                material: {
+                  color: "#c0ad91",
+                },
+              },
+            ],
+          },
+        };
+
+        const stairInside9Layer = new GeoJSONLayer({
+          url: "./dataGeojson/inside/stairInside9.geojson",
+        });
+        stairInside9Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.25,
+                material: {
+                  color: "#c0ad91",
+                },
+              },
+            ],
+          },
+        };
+
+        const stairInside10Layer = new GeoJSONLayer({
+          url: "./dataGeojson/inside/stairInside10.geojson",
+        });
+        stairInside10Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.25,
+                material: {
+                  color: "#c0ad91",
+                },
+              },
+            ],
+          },
+        };
+
+        const stairInside11Layer = new GeoJSONLayer({
+          url: "./dataGeojson/inside/stairInside11.geojson",
+        });
+        stairInside11Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.25,
+                material: {
+                  color: "#c0ad91",
+                },
+              },
+            ],
+          },
+        };
+
+        const stairInside12Layer = new GeoJSONLayer({
+          url: "./dataGeojson/inside/stairInside12.geojson",
+        });
+        stairInside12Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.25,
+                material: {
+                  color: "#c0ad91",
+                },
+              },
+            ],
+          },
+        };
+
+        const seating1Layer = new GeoJSONLayer({
+          url: "./dataGeojson/inside/seating1.geojson",
+        });
+        seating1Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.65,
+                material: {
+                  color: "#dc6f50",
+                },
+              },
+            ],
+          },
+        };
+
+        const seating2Layer = new GeoJSONLayer({
+          url: "./dataGeojson/inside/seating2.geojson",
+        });
+        seating2Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.65,
+                material: {
+                  color: "#dc6f50",
+                },
+              },
+            ],
+          },
+        };
+
+        const stage1Layer = new GeoJSONLayer({
+          url: "./dataGeojson/inside/stage1.geojson",
+        });
+        stage1Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 1.5,
+                material: {
+                  color: "#f3cb8a",
+                },
+              },
+            ],
+          },
+        };
+
+        const stage2Layer = new GeoJSONLayer({
+          url: "./dataGeojson/inside/stage2.geojson",
+        });
+        stage2Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 1.5,
+                material: {
+                  color: "#f3cb8a",
+                },
+              },
+            ],
+          },
+        };
+
+        const stage3Layer = new GeoJSONLayer({
+          url: "./dataGeojson/inside/stage3.geojson",
+        });
+        stage3Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 1.5,
+                material: {
+                  color: "#f3cb8a",
                 },
               },
             ],
@@ -1358,7 +1692,7 @@
                 type: "extrude",
                 size: 1.88,
                 material: {
-                  color: "#5d5b57",
+                  color: "#E8E8E8",
                 },
               },
             ],
@@ -1512,6 +1846,26 @@
               },
             ],
           },
+
+        };
+
+        const wall = new GeoJSONLayer({
+          url: "./dataGeojson/wall.geojson",
+        });
+        wall.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 1.95,
+                material: {
+                  color: "#4a4a4a",
+                },
+              },
+            ],
+          },
         };
 
         const map = new Map({
@@ -1598,6 +1952,25 @@
             rightBalcony,
             upperRightBalcony,
             //window,
+
+            //update layers
+            seating1Layer,
+            seating2Layer,
+            stage1Layer,
+            stage2Layer,
+            stage3Layer,
+            stairInsideLayer,
+            stairInside2Layer,
+            stairInside3Layer,
+            stairInside4Layer,
+            stairInside5Layer,
+            stairInside6Layer,
+            stairInside7Layer,
+            stairInside8Layer,
+            stairInside9Layer,
+            stairInside10Layer,
+            stairInside11Layer,
+            stairInside12Layer,
           ], //end layers
         });
 
